@@ -4,12 +4,12 @@ Network topology
 
 
 The network presented in this publication will consist of the following devices:
-<br>1 number of routers</br>
-2 number of switches
-5 number of hosts
-4 number of servers
-2 number of Firewalls
-X number of IPS/IDS/NIDS/HIDS/WAF/NGFW/SIEM
+- 1 number of routers</br>
+- 2 number of switches
+- 5 number of hosts
+- 4 number of servers
+- 2 number of Firewalls
+- X number of IPS/IDS/NIDS/HIDS/WAF/NGFW/SIEM
 
 The logical topology of the network will look as presented in topology.png file.
 
