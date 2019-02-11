@@ -9,7 +9,7 @@ The network presented in this publication will consist of the following devices:
 - 5 number of hosts
 - 4 number of servers
 - 2 number of Firewalls
-- 1 number of NIDS (SNORT)
+- 1 number of NIDS (SNORT appliance)
 
 The logical topology of the network will look as presented in topology.png file.
 
