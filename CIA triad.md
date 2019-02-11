@@ -14,6 +14,7 @@ User A is browsing the website of his bank website called BANK.com
 
 If due to any reasons the User A could all of a sudden modify the server files, he could mess with the data of ongoing transactions, modify the account balances, delete user accounts or create new ones that could act as a backdoor. 
 
+####
 - Confidentiality. Data must be presented only to the authenticated and authorized users. 
 
 Scenario:
@@ -23,7 +24,7 @@ Scenario:
 
 This could result not only in some potential risks related to the insider trading, data leakage, breaching the need-to-know policy and similiar but also in breaching the compliance of rules imposed by financial regulators.
 
-
+####
 - Availability. Data must be available to the users at all time. 
 Scenario:
 - User A wants to sell his company stocks on a stock exchange via their website but the system has been taken offline by an ongoing DDoS attack. 
