@@ -19,6 +19,8 @@ There will be three network zones:
 - GREEN zone (intranet)
 - BLUE zone (critical internal infrastructure)
 
+The connections will be allowed as follows:  
+
 - RED zone <> GREEN zone connections are allowed and should traverse through the ORANGE (DMZ) zone. 
 - BLUE <> GREEN connections are allowed.
 - BLUE <> ORANGE and BLUE <> RED are not allowed. 
