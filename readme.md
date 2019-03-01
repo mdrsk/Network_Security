@@ -1,4 +1,4 @@
-# Implementing network security in compliance with ISO:IEC 27001:2013 in a LAN environment, based on selected ISO technical controls.
+# Implementing network security in compliance with ISO:IEC 27001:2013 in a LAN environment, based on selected technical controls.
 # Concept 
 
 
@@ -23,3 +23,8 @@ The following security domains are covered by the ISO standard:
 - A.17: Information security aspects of business continuity management (4 controls)
 - A.18: Compliance; with internal requirements, such as policies, and with external requirements, such as laws (8 controls)
 
+Our focus will be on those technical controls:
+- A.9: Access control (14 controls)
+- A.10: Cryptography (2 controls)
+- A.12: Operations security (14 controls)
+- A.14: System acquisition, development and maintenance (13 controls)
