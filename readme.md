@@ -46,7 +46,7 @@ Our implementation will focus on those technical controls:
 - A.11.5.4 Use of system utilities Control The use of utility programs that might be capable of overriding system and application controls shall be restricted and tightly controlled. 
 - A.11.5.5 Session time-out Control Inactive sessions shall shut down after a defined period of inactivity. 
 - A.11.5.6 Limitation of connection time Control Restrictions on connection times shall be used to provide additional security for high-risk applications.
-
+- A.12.6.1 Control of technical vulnerabilities Control Timely information about technical vulnerabilities of information systems being used shall be obtained, the organization's exposure to such vulnerabilities evaluated, and appropriate measures taken to address the associated risk. 
 
 
 
