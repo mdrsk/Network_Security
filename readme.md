@@ -29,4 +29,7 @@ Our implementation will focus on those technical controls:
 - A.12: Operations security (14 controls)
 - A.14: System acquisition, development and maintenance (13 controls)
 
-The reason for this is that policies such as "Human Resource security" do not have controls that could colerate with network security. 
+
+
+*The reason for this is that policies such as "Human Resource security" do not have controls that could colerate with network security.* 
+
