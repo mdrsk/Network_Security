@@ -1,4 +1,5 @@
-# Implementing network security in compliance with ISO:IEC 27002:2013 in a LAN environment, based on selected technical controls.
+# Implementing chosen technical controls in compliance with ISO:IEC 27001 stanard to achieve a secure network environemnt. 
+
 # Concept 
 
 
