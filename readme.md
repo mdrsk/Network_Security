@@ -29,6 +29,18 @@ Our implementation will focus on those technical controls:
 - A.12: Operations security (14 controls)
 - A.14: System acquisition, development and maintenance (13 controls)
 
+Access control:
+- User access to corporate IT systems, networks, applications and information must be controlled in accordance with access requirements specified by the relevant Information Asset Owners, normally according to the user's role.
+- Generic or test IDs must not be created or enabled on production systems unless specifically authorized by the relevant Information Asset Owners.
+- After a predefined number of unsuccessful logon attempts, security log entries and (where appropriate) security alerts must be generated and user accounts must be locked out as required by the relevant Information Asset Owners.
+- Passwords or pass phrases must be lengthy and complex, consisting of a mix of letters, numerals and special characters that would be difficult to guess.
+- Passwords or pass phrases must not be written down or stored in readable format.
+- Authentication information such as passwords, security logs, security configurations and so forth must be adequately secured against unauthorized or inappropriate access, modification, corruption or loss.
+- Privileged access rights typically required to administer, configure, manage, secure and monitor IT systems must be reviewed periodically (at least twice a year) by Information Security and cross-checked by the appropriate departmental managers.
+- Users must either log off or password-lock their sessions before leaving them unattended.
+- Password-protected screensavers with an inactivity timeout of no more than 10 minutes must be enabled on all workstations/PCs.
+- Write access to removable media (USB drives, CD/DVD writers etc.) must be disabled on all desktops unless specifically authorized for legitimate business reasons.
+
 
 
 *The reason for this is that policies such as "Human Resource security" do not have controls that could colerate with network security.* 
