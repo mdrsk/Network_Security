@@ -23,8 +23,10 @@ The following security domains are covered by the ISO standard:
 - A.17: Information security aspects of business continuity management (4 controls)
 - A.18: Compliance; with internal requirements, such as policies, and with external requirements, such as laws (8 controls)
 
-Our focus will be on those technical controls:
+Our implementation will focus on those technical controls:
 - A.9: Access control (14 controls)
 - A.10: Cryptography (2 controls)
 - A.12: Operations security (14 controls)
 - A.14: System acquisition, development and maintenance (13 controls)
+
+The reason for this is that policies such as "Human Resource security" do not have controls that could colerate with network security. 
