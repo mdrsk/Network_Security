@@ -2,3 +2,4 @@ Lynis / Tiger will be used to audit the internal machines (only the hosts that a
 Nmap will be used to audit the internal network.
 Nessus will be used to look for layer 7 vulnerabilities (mainly). 
 
+2 hardware boxes will be needed to run the pfSense appliances and another 2 to run the SNORT appliances. 
