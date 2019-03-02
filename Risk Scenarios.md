@@ -1,4 +1,4 @@
-# Network_Security
+# IT Risk Scenarios
 
 The CIA triad (confidentiality, Integrity and Availability) - Most important pillars that are necessary to fulfill the requirements of ISO standard.
 
