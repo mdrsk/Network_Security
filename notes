@@ -1,2 +1,4 @@
 Lynis / Tiger will be used to audit the internal machines (only the hosts that are running unix OS). 
+Nmap will be used to audit the internal network.
+Nessus will be used to look for layer 7 vulnerabilities (mainly). 
 
