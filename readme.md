@@ -26,6 +26,9 @@ The following security domains are covered by the ISO (27001/2 2013) standard:
 
 
 Our implementation will focus on those technical controls:
+- A.10.5.1 Information back-up Control Back-up copies of information and software shall be taken and tested regularly in accordance with the agreed backup policy. 
+- A.10.4.1 Controls against malicious code Control Detection, prevention, and recovery controls to protect against malicious code and appropriate user awareness procedures shall be implemented. 
+- A.10.1.1 Documented operating procedures Control Operating procedures shall be documented, maintained, and made available to all users who need them.
 - A.10.6.1 Network controls - Control Networks shall be adequately managed and controlled, in order to be protected from threats, and to maintain security for the systems and applications using the network, including information in transit.
 - A.10.10.1 Audit logging Control Audit logs recording user activities, exceptions, and information security events shall be produced and kept for an agreed period to assist in future investigations and access control monitoring. 
 - A.10.10.2 Monitoring system use Control Procedures for monitoring use of information processing facilities shall be established and the results of the monitoring activities reviewed regularly. 
