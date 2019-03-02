@@ -1,4 +1,4 @@
-# Implementing chosen technical controls in compliance with ISO:IEC 27001 stanard to achieve a secure network environemnt. 
+# Implementing chosen technical controls in compliance with ISO:IEC 27001 standard to achieve a secure network environemnt. 
 
 # Concept 
 
