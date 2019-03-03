@@ -29,3 +29,8 @@ The connections will be allowed as follows:
 For firewalls we will use pfSense appliances. 
 
 For NIDS (Network Intrusion Detection System) we will be using SNORT appliances. 
+
+SNORT vs Suricata - to decide
+
+Snort is an open-source, lightweight, free network intrusion detection system (NIDS) software for Linux and Windows to detect emerging threats. It’s capable of of performing real-time traffic analysis and packet logging on IP networks.
+
