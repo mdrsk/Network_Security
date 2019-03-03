@@ -34,3 +34,5 @@ SNORT vs Suricata - to decide
 
 Snort is an open-source, lightweight, free network intrusion detection system (NIDS) software for Linux and Windows to detect emerging threats. It’s capable of of performing real-time traffic analysis and packet logging on IP networks.
 
+What about intercepting HTTPS Traffic? -> Squid proxy (or mitmproxy but limited to hosts only, squid can be centralized)
+Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.
