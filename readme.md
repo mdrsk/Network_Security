@@ -8,15 +8,18 @@ The network presented in this publication will consist of the following devices 
 
 x number of routers
 x number of switches
-x number of hosts
-x number of servers
-x number of Firewalls
-x number of NIDS (SNORT appliance)
+x number of hosts (unix based mainly)
+x number of servers (ubuntu LTS)
+x number of Firewalls (pfSense open-source firewall) 
+x number of NIDS (SNORT and Suricata appliances)
 
-Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. 
+The LAB will be created with EVE-NG (the Emulated Virtual Environment for Network, Security and DevOps professionals). 
+EVE-NG PRO is a clientless multivendor network emulation software. 
+
+Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. Additionally, once all the below technical controls are implemented in our infrastructure, an audit will be performed to show that the network is somehow secure. This although does not mean that the audit will not find any issues, mainly due to the fact that we will be implementing only selected controls. 
 
 
-The following control categories will be in the focus of our interest: 
+The following control categories will be in the focus of our interest and the network will be implemented in a way to be compliant with: 
 
 1. Risk Assessment (ID.RA): The organization understands the cybersecurity risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals.
 
@@ -30,7 +33,7 @@ The following control categories will be in the focus of our interest:
 
 6. Security Continuous Monitoring (DE.CM): The information system and assets are monitored to identify cybersecurity events and verify the effectiveness of protective measures.
 
-And from those control categories, we will focus on the following technical controls that we will cover in this project: 
+And from those control categories, we will focus only the following technical controls that we will cover in this project: 
 
 - ID.RA-1: Asset vulnerabilities are identified and documented
 - PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation)
@@ -70,6 +73,14 @@ BLUE <-> ORANGE and BLUE <> RED are not allowed.
 
 Blue zone will only receive ingress traffic from the green zone (to get the LOGS from IDS,NIDS,HIDS,IPS, NetFlow etc.).
 The egress traffic will be disabled - the firewall between Green and Blue zone will only allow incoming traffic. This way we will assure that the data collected in blue-zone cannot be modified from the outside and can be assessed only on-site and locally. 
+
+
+- DE.CM-8: Vulnerability scans are performed
+- ID.RA-1: Asset vulnerabilities are identified and documented
+
+A vulnerability scans will be performed using Nmap, Nessus, OpenVAS. The scan results will be documented and assessed (i.e.: the possible impact of every found vulnerability will be rated and explained, ideally a risk scenario will be created). 
+
+- PR.DS-6: Integrity checking mechanisms are used to verify software, firmware, and information integrity
 
 
 
