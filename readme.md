@@ -4,8 +4,19 @@
 
 This project will focus on implementing a small network infrastructure for a XYZ company that will be compliant with NIST Cybersecurity Framework. This implementation will focus only on selected technical controls that are related as close as possible to the network security field (e.g.: Access control, Data Security, Security Continuous Monitoring). 
 
-Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this work is to not focus on a specific vendor equipment but rather to present the idea of implementing 
+The network presented in this publication will consist of the following devices (the number of devices might be a subject to change):
 
+x number of routers
+x number of switches
+x number of hosts
+x number of servers
+x number of Firewalls
+x number of NIDS (SNORT appliance)
+
+Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. 
+
+
+The following controls will be in the focus of our interest: 
 
 Risk Assessment (ID.RA): The organization understands the cybersecurity risk to organizational operations (including mission, functions, image, or reputation), organizational assets, and individuals.
 
@@ -15,6 +26,23 @@ Risk Assessment (ID.RA): The organization understands the cybersecurity risk to 
 Identity Management, Authentication and Access Control (PR.AC): Access to physical and logical assets and associated facilities is limited to authorized users, processes, and devices, and is managed consistent with the assessed risk of unauthorized access to authorized activities and transactions.
 
 - PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation)
+
+In order to achieve proper network segmentation:
+
+The network will operate as four zones, to maintain the confidentiality of data. 
+- RED zone (external network, outside the company)
+- ORANGE zone (DMZ, where honey pots, ftp and web servers reside)
+- GREEN zone (intranet)
+- BLUE zone (critical internal infrastructure), 
+
+
+The following connections will be allowed: 
+RED zone <-> GREEN zone connections are allowed and should traverse through the ORANGE (DMZ) zone.
+BLUE <-> GREEN connections are allowed.
+BLUE <-> ORANGE and BLUE <> RED are not allowed.
+
+Blue zone will only receive ingress traffic from the green zone (to get the LOGS from IDS,NIDS,HIDS,IPS, NetFlow etc.)
+
 
 Data Security (PR.DS): Information and records (data) are managed consistent with the organization’s risk strategy to protect the confidentiality, integrity, and availability of information.
 
