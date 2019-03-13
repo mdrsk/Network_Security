@@ -13,8 +13,9 @@ x number of servers (ubuntu LTS)
 x number of Firewalls (pfSense open-source firewall) 
 x number of NIDS (SNORT and Suricata appliances)
 
-The LAB will be created with EVE-NG (the Emulated Virtual Environment for Network, Security and DevOps professionals). 
-EVE-NG PRO is a clientless multivendor network emulation software. 
+The LAB will be created with EVE-NG Community Edition (the Emulated Virtual Environment for Network, Security and DevOps professionals). 
+EVE-NG is a clientless multivendor network emulation software. 
+The EVE-NG is available at https://www.eve-ng.net/
 
 Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. Additionally, once all the below technical controls are implemented in our infrastructure, an audit will be performed to show that the network is somehow secure. This although does not mean that the audit will not find any issues, mainly due to the fact that we will be implementing only selected controls. 
 
