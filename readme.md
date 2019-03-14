@@ -69,9 +69,9 @@ The network will operate as four zones, to maintain the confidentiality of data.
 
 
 Only the following connections will be allowed: 
-RED zone <-> GREEN zone connections are allowed and should traverse through the ORANGE (DMZ) zone.
-BLUE <- GREEN connections are allowed.
-BLUE <-> ORANGE and BLUE <> RED are not allowed.
+- RED zone <-> GREEN zone connections are allowed and should traverse through the ORANGE (DMZ) zone.
+- BLUE <- GREEN connections are allowed.
+- BLUE <-> ORANGE and BLUE <> RED are not allowed.
 
 Blue zone will only receive ingress traffic from the green zone (to get the LOGS from IDS,NIDS,HIDS,IPS, NetFlow etc.).
 The egress traffic will be disabled - the firewall between Green and Blue zone will only allow incoming traffic. This way we will assure that the data collected in blue-zone cannot be modified from the outside and can be assessed only on-site and locally. 
