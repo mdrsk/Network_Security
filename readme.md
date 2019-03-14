@@ -106,5 +106,4 @@ This will help to keep track of devices that are allowed into the network.
 
 To collect and correlate the data from multiple sources we will use OSSIM open-source SIEM. 
 The pfSense appliances will be also running SNORT in the background to log the network traffic and those will be one of the data sources that will be feeding the SIEM. Aparat from that all the switches, routers and hosts will be reporting directly to the SIEM. The events and alerts will be determined during the next phase of the project. 
-
-
+Snort (https://www.snort.org/) will be loaded with the community custom rules.
