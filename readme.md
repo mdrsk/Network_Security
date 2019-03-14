@@ -6,12 +6,12 @@ This project will focus on implementing a small network infrastructure for a XYZ
 
 The network presented in this publication will consist of the following devices (the number of devices might be a subject to change):
 
-x number of routers
-x number of switches
-x number of hosts (unix based mainly)
-x number of servers (ubuntu LTS)
-x number of Firewalls (pfSense open-source firewall) 
-x number of NIDS (SNORT and Suricata appliances)
+- x number of routers
+- x number of switches
+- x number of hosts (unix based mainly)
+- x number of servers (ubuntu LTS)
+- x number of Firewalls (pfSense open-source firewall) 
+- x number of NIDS (SNORT and Suricata appliances)
 
 The LAB will be created with EVE-NG Community Edition (the Emulated Virtual Environment for Network, Security and DevOps professionals). 
 EVE-NG is a clientless multivendor network emulation software. 
