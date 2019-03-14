@@ -17,7 +17,7 @@ The LAB will be created with EVE-NG Community Edition (the Emulated Virtual Envi
 EVE-NG is a clientless multivendor network emulation software. 
 The EVE-NG is available at https://www.eve-ng.net/
 
-Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. Additionally, once all the below technical controls are implemented in our infrastructure, an audit will be performed to show that the network is somehow secure. This although does not mean that the audit will not find any issues, mainly due to the fact that we will be implementing only selected controls. 
+Most of the hardware components used in this topology are manufactured under the CISCO brand, nonethless other security products (such as IPS, IDS, NIDS, HIDS etc.) may be from another vendor. The idea of this project is to not focus on a specific vendor equipment but rather to present the idea of securing a simple network in accordance with the NIST Cybersecurity Framework, which should guarantee the basic-level of compliance with the information security standards such as ISO/IEC. Additionally, once all the below technical controls are implemented in our infrastructure, an audit will be performed to show that the network is somehow secure. The audit will have a holistic approach as we will try to find out what was implemented properly and what could have been implemented in a better way. This although does not mean that the audit will not find any issues, mainly due to the fact that we will be implementing only selected controls - the ideal result will be when our audit has some findings of various severities. 
 
 
 The following control categories will be in the focus of our interest and the network will be implemented in a way to be compliant with: 
@@ -35,6 +35,7 @@ The following control categories will be in the focus of our interest and the ne
 6. Security Continuous Monitoring (DE.CM): The information system and assets are monitored to identify cybersecurity events and verify the effectiveness of protective measures.
 
 And from those control categories, we will focus only the following technical controls that we will cover in this project: 
+*Please be informed that the idea is to implement the technical controls and no focus will be made on things such as 'implementing processes and people' etc. The framework states that there should be People, Processes and Technology to maintain a secure environment but our scope focuses only on the technology aspect.*
 
 - ID.RA-1: Asset vulnerabilities are identified and documented
 - PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation)
