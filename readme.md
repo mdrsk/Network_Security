@@ -57,6 +57,7 @@ And from those control categories, we will focus only the following technical co
 
 
 - PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation)
+- DE.AE-1: A baseline of network operations and expected data flows for users and systems is established and managed
 
 In order to achieve proper network segmentation:
 
@@ -75,6 +76,7 @@ BLUE <-> ORANGE and BLUE <> RED are not allowed.
 Blue zone will only receive ingress traffic from the green zone (to get the LOGS from IDS,NIDS,HIDS,IPS, NetFlow etc.).
 The egress traffic will be disabled - the firewall between Green and Blue zone will only allow incoming traffic. This way we will assure that the data collected in blue-zone cannot be modified from the outside and can be assessed only on-site and locally. 
 
+Each zone will have it's own VLAN. Two separate VLANs must communicate through a layer-3 device, therefore the switches between the zone will be either Layer-3 or we will place a router instead. 
 
 - DE.CM-8: Vulnerability scans are performed
 - ID.RA-1: Asset vulnerabilities are identified and documented
@@ -83,6 +85,18 @@ A vulnerability scans will be performed using Nmap, Nessus, OpenVAS. The scan re
 
 - PR.DS-6: Integrity checking mechanisms are used to verify software, firmware, and information integrity
 
+To verify the integrity of data (e.g.: configuration files of network devices, SIEM logs) we will be using OSSEC HIDS. 
+This Host Based Intrusion Detection System software can be found at https://www.ossec.net/ and is available for Windows and Unix architecture. 
+
+We will be deploying OSSEC HIDS on the server that will be located in blue zone to guarantee the integrity of logs. 
+
+
+- DE.CM-7: Monitoring for unauthorized personnel, connections, devices, and software is performed
+A nmap script will be run multiple times once a day to look for unauthorized devices within the network. 
+Basically we will be doing something like nmap -sP 192.168.0.1-100.
+
+A document will be created that will list the company assets (i.e.: network devices and their hardware identifiers, MAC adresses).
+This will help to keep track of devices that are allowed into the network. 
 
 
 
