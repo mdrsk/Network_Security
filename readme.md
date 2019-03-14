@@ -54,7 +54,7 @@ And from those control categories, we will focus only the following technical co
 - DE.CM-8: Vulnerability scans are performed
 
 
-
+Mapping the controls to our infrastructure (where possible): 
 
 - PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation)
 - DE.AE-1: A baseline of network operations and expected data flows for users and systems is established and managed
@@ -98,7 +98,13 @@ Basically we will be doing something like nmap -sP 192.168.0.1-100.
 A document will be created that will list the company assets (i.e.: network devices and their hardware identifiers, MAC adresses).
 This will help to keep track of devices that are allowed into the network. 
 
+- DE.AE-2: Detected events are analyzed to understand attack targets and methods
+- DE.AE-3: Event data are collected and correlated from multiple sources and sensors
+- DE.CM-1: The network is monitored to detect potential cybersecurity events
+- DE.CM-2: The physical environment is monitored to detect potential cybersecurity events
+- DE.CM-4: Malicious code is detected
 
-
+To collect and correlate the data from multiple sources we will use OSSIM open-source SIEM. 
+The pfSense appliances will be also running SNORT in the background to log the network traffic and those will be one of the data sources that will be feeding the SIEM. Aparat from that all the switches, routers and hosts will be reporting directly to the SIEM. The events and alerts will be determined during the next phase of the project. 
 
 
