@@ -144,4 +144,5 @@ In our project we will be using the following linux images
 - Linux Ubuntu desktop 17.10.1
 - Linux TinyCore-6.4
 
-
+# Summary
+Further technical details or implementation how-to's will be explained and described during the next phase of the project which includes the practical phase. 
