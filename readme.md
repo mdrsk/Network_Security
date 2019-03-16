@@ -129,4 +129,13 @@ pFSense is also easily emulated on the EVE-NG environment.
 6. Set permissions /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
 
 
+# Running Cisco iOS switches (L2 or L3) 
+https://www.eve-ng.net/documentation/howto-s/62-howto-add-cisco-iou-iol
+
+# Running Cisco Routers based on dynamips
+https://www.eve-ng.net/documentation/howto-s/64-howto-add-dynamips-images-cisco-ios
+
+# Running Linux boxes
+https://www.eve-ng.net/documentation/howto-s/106-howto-create-own-linux-image
+
 
