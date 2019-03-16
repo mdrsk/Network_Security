@@ -139,9 +139,9 @@ https://www.eve-ng.net/documentation/howto-s/64-howto-add-dynamips-images-cisco-
 https://www.eve-ng.net/documentation/howto-s/106-howto-create-own-linux-image
 
 In our project we will be using the following linux images
-Linux Kali 2018.1-amd64
-Linux Ubuntu server 14.04.4
-Linux Ubuntu desktop 17.10.1
-Linux TinyCore-6.4
+- Linux Kali 2018.1-amd64
+- Linux Ubuntu server 14.04.4
+- Linux Ubuntu desktop 17.10.1
+- Linux TinyCore-6.4
 
 
