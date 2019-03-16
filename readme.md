@@ -117,6 +117,8 @@ Servers and hosts will be hardened using Lynis (Lynis - Security auditing tool f
 Short summary of used technologies and tools:
 - Eve-NG, Snort , Suricata, OSSIM, OSSEC, pfSense, Cisco Layer 2/3 switches, Cisco routers, nmap, openVAS, tcpdump, Nessus, Kali Linux, Lynis, Tiger. 
 
+The list of technologies may be expanded further during the project. 
+
 The firewalls that we will use between network zones (e.g.: between DMZ and Green zone) will be running a pfSense appliance. PfSense can be easily integrated with SNORT - SNORT comes as a package that you can launch directly from the pfSense GUI. 
 
 pFSense is also easily emulated on the EVE-NG environment. 
