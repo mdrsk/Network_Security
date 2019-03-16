@@ -115,3 +115,18 @@ Servers and hosts will be hardened using Lynis (Lynis - Security auditing tool f
 
 Short summary of used technologies and tools:
 - Eve-NG, Snort , Suricata, OSSIM, OSSEC, pfSense, Cisco Layer 2/3 switches, Cisco routers, nmap, openVAS, tcpdump, Nessus, Kali Linux, Lynis, Tiger. 
+
+The firewalls that we will use between network zones (e.g.: between DMZ and Green zone) will be running a pfSense appliance. PfSense can be easily integrated with SNORT - SNORT comes as a package that you can launch directly from the pfSense GUI. 
+
+pFSense is also easily emulated on the EVE-NG environment. 
+
+#Running pfSense on EVE-NG#
+1. First, we will have to download the pfSense image from their official repository. (https://nyifiles.pfsense.org/mirror/downloads/pfSense-CE-2.3.5-RELEASE-2g-amd64-nanobsd.img.gz) 
+2. Unzip it using zcat (if running unix box) zcat pfsense.img.gz > pfsense.img
+3. SSH to the EVE-NG appliance and create directory for pfSense nodemkdir  mkdir /opt/unetlab/addons/qemu/pfsense-CE-2.3.5/
+4. Upload the img to the above path
+5. convert to qcow2 format cd /opt/unetlab/addons/qemu/pfsense-CE-2.3.5/ mv pfSense-CE-2.3.5-RELEASE-2g-amd64-nanobsd.img hda.qcow2
+6. Set permissions /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
+
+
+
