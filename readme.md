@@ -93,6 +93,7 @@ We will be deploying OSSEC HIDS on the server that will be located in blue zone 
 
 
 - DE.CM-7: Monitoring for unauthorized personnel, connections, devices, and software is performed
+
 A nmap script will be run multiple times once a day to look for unauthorized devices within the network. 
 Basically we will be doing something like nmap -sP 192.168.0.1-100.
 
